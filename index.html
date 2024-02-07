@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movies App</title>
+        <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/all.min.css">
+    </head>
+
+    <body>
+        <div class="loade bg-black d-none">
+            <span class="loader"></span>
+        </div>
+        <aside class="d-flex vh-100 align-content-center">
+            <section id="menu" class=" nav-tab bg-black d-flex flex-column justify-content-between min-vh-100 p-4">
+                <div class="links ">
+                    <ul class="nav flex-column">
+                        <li class="nav-item py-2">
+                            <a class="nav-link text-white" href="#">Now playing</a>
+                        </li>
+                        <li class="nav-item py-2 ">
+                            <a class="nav-link text-white" href="#">Popular</a>
+                        </li>
+                        <li class="nav-item py-2 ">
+                            <a class="nav-link text-white" href="#">Top Rated</a>
+                        </li>
+                        <li class="nav-item py-2 ">
+                            <a class="nav-link text-white" href="#">Trending</a>
+                        </li>
+                        <li class="nav-item py-2 ">
+                            <a class="nav-link text-white" href="#">Upcoming</a>
+                        </li>
+                        <li class="nav-item py-2 ">
+                            <a class="nav-link text-white" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-footer text-white">
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="footer">
+                        <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                    </div>
+                </div>
+            </section>
+            <div id="option"
+                class="option nav-header d-flex flex-column justify-content-between py-4 px-2 text-center bg-white text-black ">
+                <img class="logo" src="./img/logo.png" alt="" srcset="">
+                <div id="closebtn">
+                    <i class="fa-solid open-close-icon fa-2x fa-align-justify fs-2 fw-bolder"></i>
+                </div>
+                <div class="d-flex flex-column fs-5">
+                    <i class="fa-solid fa-globe d-block pb-4"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </div>
+        </aside>
+        <section id="hero" class="py-5 container mx-auto">
+            <input id="search" type="search" placeholder="Search" class="form-control w-50 p-3 mx-auto bg-transparent rounded-pill text-white shadow-none border-white px-3">
+            <div class="row g-4 mt-3 text-white" id="display">
+
+            </div>
+        </section>
+        <section id="contact" class="container text-white py-5">
+            <h2>Contact US</h2>
+            <form >
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <input type="text" required="" id="name" maxlength="37" class="form-control mt-4 border-0 border-bottom"
+                            placeholder="Enter Your Name">
+                        <span class="error"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" required="" id="email" class="form-control mt-4 border-0 border-bottom " placeholder="Enter Your Email">
+                        <span class="error"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" required="" id="phone" class="form-control mt-4 border-0 border-bottom" placeholder="Enter Your Phone">
+                        <span class="error"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" required="" id="age" class="form-control mt-4 border-0 border-bottom" placeholder="Enter Your Age">
+                        <span class="error"></span>
+                    </div>
+                    <div class="col-md-6 position-relative">
+                        <input type="password" required="" id="password" class="form-control mt-4 border-0 border-bottom"
+                            placeholder="Enter Your Password">
+                        <span class="error"></span>
+                        <span class="showPass" style="opacity: 0; bottom: -20px;"><i data-show="show"
+                                class="fa-solid fa-eye-slash"></i></span>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" required="" id="repassword" class="form-control mt-4 border-0 border-bottom"
+                            placeholder="ReEnter Password">
+                        <span class="error"></span>
+                    </div>
+                    <div class="col-md-12  mt-4">
+                        <button type="submit" class="form-btn btn btn-outline-light fs-3 border-0 px-5 py-3 rounded-2 mb-3 animate__animated">Submit</button>
+                    </div>
+        
+                </div>
+            </form>
+        </section>
+        <div id="arrow" class=" text-center bg-dark px-4 py-3">
+            <i class="fa-solid fa-arrow-up-long"></i>
+        </div>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script type="module" src="./js/main.js"></script>
+    </body>
+
+</html>
