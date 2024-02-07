@@ -38,7 +38,7 @@ export class UI {
                                 <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt="${data.results[i].title}" class="img-fluid card-img">
                             </div>
                             <div class=" overlay overflow-hidden animate__fadeIn" style="opacity: 0; visibility: hidden;">
-                                <h1 class="title animate__slideOutLeft">The Beekeeper</h1>
+                                <h1 class="title animate__slideOutLeft">${data.results[i].title}</h1>
                                 <p class="desc animate__slideOutLeft">${overview}</p>
                                 <p class="date animate__slideOutLeft"><span class="fst-normal">Release Date<span>
                                 ${data.results[i].release_date}</span></span></p>
